@@ -61,3 +61,44 @@ kolory.update(["niebieski","navy","magenta"])
 print(kolory)
 
 liczby = [4,6,8,2,3,1,3,3,4,5,8,11,23,1,3,4,5,2,4,12,3,2,4,5,7,8]
+
+
+print(liczby)
+liczby_zb = set(liczby)
+liczby = list(liczby_zb)
+
+print(liczby)
+
+#słownik
+osoba = {
+    "imię":"Lidia",
+    "nazwisko":"Kot",
+    "miasto":"Kraków",
+    "rok_urodz":1980
+}
+
+print(osoba)
+print(osoba["miasto"])
+osoba["kolor_oczu"] = "brązowe"
+print(osoba)
+
+osoba1 = osoba
+print(osoba1)
+
+
+#tworzenie nowej in stancji: dict(),set(),list(),tuple()
+osoba2 = dict(osoba)
+
+osoba["nazwisko"] ="Nowikowska"
+print(osoba1)
+
+print(osoba2)
+
+print(osoba.keys())
+print(osoba.values())
+print(osoba.items())
+
+for x,y in osoba.items():
+    print(f"{x}: {y}")
+
+
