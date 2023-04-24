@@ -1,13 +1,16 @@
 # przykład 1
-n=100
+n = 100
+
 
 def fx(n):
-    return n*7
+    return n * 7
 
-def policz(a: float, b: float, c:  int= 5, y:int=4) -> int:
+
+def policz(a: float, b: float, c: int = 5, y: int = 4) -> int:
     global n
     n = (a + b) * y - c + n + fx(b)
     return n
+
 
 print(policz(5, 7, 3, 2))
 print(type(policz(5, 7, 3, 2)))
@@ -15,10 +18,9 @@ print(policz(6.6, 7, 5, 1))
 print(type(policz(6.6, 7, 2, 3)))
 print(n)
 
-print(policz(3,7,2))
-print(policz(3,7,2,6))
-print(policz(3,7,y=7.4))
-
+print(policz(3, 7, 2))
+print(policz(3, 7, 2, 6))
+print(policz(3, 7, y=7.4))
 
 #przykład2
 
@@ -47,3 +49,19 @@ def multi(n):
 print(multi(6)(11))
 
 liczby = [67,2,-9,68,-23,0,77,9,5,66,101,5,-1,34,78,99,11]
+
+nparz = list(filter(lambda x:x%2==0,liczby))
+print(nparz)
+
+def parzyste(x):
+    return x%2==0
+
+def filtrowanie(dane,test):
+    pp = []
+    for element in dane:
+        if(test(element)):
+            pp.append(element)
+    return pp
+
+print(filtrowanie(liczby,parzyste))
+
