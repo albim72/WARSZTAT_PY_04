@@ -39,7 +39,6 @@ print(imiona)
 imiona.sort()
 print(imiona)
 
-
 #krotka
 
 miasta = ("Kraków","Warszawa","Lublin","Rzeszów","Poznań","Kraków")
@@ -49,3 +48,16 @@ print(miasta[2:4])
 #zbiór
 
 kolory = {"zielony","żółty","szary","czarny","biały","czarny","czerwony","czarny"}
+
+print(kolory)
+print(kolory)
+print(kolory)
+
+kolory.add("fioletowy")
+
+print(kolory)
+
+kolory.update(["niebieski","navy","magenta"])
+print(kolory)
+
+liczby = [4,6,8,2,3,1,3,3,4,5,8,11,23,1,3,4,5,2,4,12,3,2,4,5,7,8]
