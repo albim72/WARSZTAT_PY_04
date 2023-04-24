@@ -20,6 +20,14 @@ print(policz(3,7,2,6))
 print(policz(3,7,y=7.4))
 
 
+#przykład2
 
+# *nazwa -> lista argumentów, **druganazwa = słownik argumentów
+def rank(*lang,nrrank,**inne):
+    print(f"ranking języków programowania nr {nrrank}-> miejsce, pierwsze: {lang[0]}, drugie: {lang[1]}, trzecie:"
+          f" {lang[2]}, rok {inne}")
+
+
+rank("Java","Python","C++",nrrank=23,rok=2022,kwartal="I")
 
 
