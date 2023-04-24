@@ -30,4 +30,20 @@ def rank(*lang,nrrank,**inne):
 
 rank("Java","Python","C++",nrrank=23,rok=2022,kwartal="I")
 
+# langlist = ["Java","Python","C++","C#","Perl"]
+# rank(langlist,nrrank=44)
 
+#przykład3
+#funkcja anonimowa lambda, w innych językach =>
+
+print((lambda e,g:2*e+g)(3.5,4.5))
+b = lambda u:u+99
+
+print(b(56))
+
+def multi(n):
+    return lambda a:a*n
+
+print(multi(6)(11))
+
+liczby = [67,2,-9,68,-23,0,77,9,5,66,101,5,-1,34,78,99,11]
