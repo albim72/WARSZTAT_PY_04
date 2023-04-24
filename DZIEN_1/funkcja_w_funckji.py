@@ -12,3 +12,24 @@ def osoba(funkcja,*args):
 
 print(osoba(witaj,"Leon"))
 print(osoba(konkurs,"Olga",67))
+
+#przykład2
+
+def rejestracja(oplata):
+    def zapisany():
+        return "jesteś na liście zawodników"
+    def brak():
+        return "masz 3 dni aby dokonać wpłaty za zawody..."
+    def error():
+        return "kod wpłaty błędny: musi być albo 1 - wpłata albo 0 - brak"
+
+    if oplata == 1:
+        return zapisany
+    elif oplata == 0:
+        return brak
+    else:
+        return error
+
+print(rejestracja(1)())
+print(rejestracja(0)())
+print(rejestracja(15)())
