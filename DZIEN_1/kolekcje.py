@@ -38,3 +38,14 @@ print(sorted(imiona))
 print(imiona)
 imiona.sort()
 print(imiona)
+
+
+#krotka
+
+miasta = ("Kraków","Warszawa","Lublin","Rzeszów","Poznań","Kraków")
+print(miasta)
+print(miasta[2:4])
+
+#zbiór
+
+kolory = {"zielony","żółty","szary","czarny","biały","czarny","czerwony","czarny"}
