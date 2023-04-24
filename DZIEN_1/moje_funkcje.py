@@ -65,3 +65,13 @@ def filtrowanie(dane,test):
 
 print(filtrowanie(liczby,parzyste))
 
+cube = list(map(lambda x:x**3,liczby))
+
+print(cube)
+
+speclista = [math.sqrt(x)*(x+7) for x in range(1,10_000_000) if x%2==0]
+print(sum(speclista))
+
+specdict = {x:math.sqrt(x)*(x+7) for x in range(1,10_000_000) if x%2==0}
+print(sum(specdict))
+
