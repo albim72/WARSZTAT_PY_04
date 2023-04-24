@@ -20,6 +20,6 @@ print(type(wynik))
 
 mini,maksi,roz,le,sa = pokaz_statystyki(liczby)
 print(f"wartość największa: {maksi}, wartość najmniejsza: {mini}, rozstęp: {roz}, liczba elementów: {le}, "
-      f"średnia arytmetyczna: {sa}")
+      f"średnia arytmetyczna: {sa:.2f}")
 
 print(pokaz_statystyki(pusta))
