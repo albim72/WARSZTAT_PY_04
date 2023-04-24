@@ -37,3 +37,10 @@ bk.setcena(41)
 print("********************************")
 print(bk.printbook())
 print(f"rabat od ceny: {bk.rabat(12)} zł")
+
+
+bk2 = Book(78,"Hobbit","J.R.R Tolkien",47)
+print("********************************")
+bk.setcena(41)
+print(bk2.printbook())
+print(f"rabat od ceny: {bk2.rabat(12)} zł")
