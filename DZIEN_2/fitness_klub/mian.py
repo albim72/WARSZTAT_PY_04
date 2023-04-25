@@ -7,6 +7,7 @@ os1 = Osoba("Feliks",43,88,178)
 print(os1)
 os1.print_osoba()
 print(f"czy osoba jest Trenerem? -> {os1.czytrener()}")
+print(os1.opis())
 
 print("Obiekty klasy Trener")
 print("*"*36)
@@ -16,4 +17,5 @@ tr1.print_osoba()
 tr1.print_trener()
 tr1.infoklub()
 tr1.infosport()
+print(tr1.opis())
 
