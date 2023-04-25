@@ -1,26 +1,32 @@
-try:
-    #x=2
-    print(x)
-except NameError:
-    print("x nie jest zdefiniowany")
-except TypeError:
-    print("niewłaściwa wartość")
-except:
-    print("nieoczekiwany błąd!")
+import math
 
-#else jest wyłączony z obsługi w momencie wystąpienia wyjątku
-else:
-    print(f"dwukrotność x = {2*x}")
 
-finally:
+def policz(a,b):
     try:
-        y = 90
-        print(f"y = {y}")
-    except NameError:
-        print("y nie jest zdefiniowany")
+        x = math.sqrt(a / b)
+
+    except ValueError as ve:
+        print(ve)
+        print("pierwiastek z liczby ujemnej!")
+    except ZeroDivisionError as ze:
+        print(ze)
+        print("dzielenie przez 0")
+    else:
+        print(f"wartość x wynosi {x}")
     finally:
-        print("wewnetrzne finally...")
+        print("policzmy coś jeszcze")
 
+try:
+    a = int(input("podaj wartość a: "))
+    b = int(input("podaj wartość b: "))
+    if b!=0:
+        if (a*b>=0):
+            policz(a,b)
+        else:
+            print("iloraz a/b nie może być ujemny")
+    else:
+        print("b nie może być ujemne")
 
-print("ciąg dalszy programu")
+except ValueError:
+    print("brak danych, albo zły format!")
 
