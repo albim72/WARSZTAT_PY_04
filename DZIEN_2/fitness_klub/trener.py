@@ -14,7 +14,16 @@ class Trener(Osoba,Klub,Sport,Ekstra):
         self.dosw_lata = dosw_lata
         self.expert = expert
         self.trener = True
-        
+
     def print_trener(self):
         print(f"Trener -> licencja {self.nr_licencji}, lata doświadczenia: {self.dosw_lata}, "
               f"ekspert? {self.expert}")
+
+    def opis(self):
+        return "to jest trener!"
+
+
+
+
+
+
