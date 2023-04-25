@@ -29,7 +29,15 @@ kl1.print_osoba()
 kl1.infoklub()
 kl1.infosport()
 print(kl1.opis())
-print(f"czy osoba jest Trenerem? -> {os1.czytrener()}")
+print(f"czy osoba jest Trenerem? -> {kl1.czytrener()}")
+print("*"*36)
+kl2 = Klient("Anna",36,60,176,8765,"otwarty",4,"Fly","Rzeszów","biegi ultra",12,"70km 9h 23min 4s",65446,10,True)
+kl2.print_osoba()
+kl2.infoklub()
+kl2.infosport()
+print(kl2.opis())
+print(f"czy osoba jest Trenerem? -> {kl2.czytrener()}")
+kl2.print_trener()
 
 
 
