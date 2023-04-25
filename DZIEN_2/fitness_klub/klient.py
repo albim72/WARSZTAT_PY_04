@@ -18,3 +18,9 @@ class Klient(Trener):
 
     def przydzial_nr(self):
         return f"przydzielono numer klienta: {self.id_klienta}."
+
+    def opis(self):
+        return "to jest klient!"
+
+
+
