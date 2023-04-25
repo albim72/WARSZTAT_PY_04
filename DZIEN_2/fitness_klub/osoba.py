@@ -20,6 +20,9 @@ class Osoba:
     def czytrener(self):
         return self.trener
 
+    def opis(self):
+        return "To jest podstawowa osoba"
+
 
 
 
