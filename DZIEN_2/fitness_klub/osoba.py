@@ -23,6 +23,24 @@ class Osoba:
     def opis(self):
         return "To jest podstawowa osoba"
 
+    def bmi(self):
+        return self.waga/(self.wzrost/100)**2
+
+    def opis_bmi(self):
+        if self.bmi()<18.5:
+            return "niedowaga"
+        elif self.bmi()<=25:
+            return "waga prawidłowa"
+        elif self.bmi()<=30:
+            return "nadwaga"
+        elif self.bmi()<=33:
+            return "otyłość stopnia I"
+        elif self.bmi()<=35:
+            return "otyłość stopnia II"
+        else:
+            return "otyłość stopnia III"
+
+
 
 
 
