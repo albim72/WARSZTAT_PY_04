@@ -64,3 +64,7 @@ pod.text = '4'
 
 print(pretty(top))
 
+with open("subaru.xml","w",encoding="utf-8") as f:
+    f.write(pretty(top))
+
+
